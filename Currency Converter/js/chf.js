@@ -3,7 +3,7 @@ function chfToAll() {
     setTimeout(chfToEuro,4);
     setTimeout(chfToUsDolar,4);
     setTimeout(chfToBritishPound,4);
-    //    setTimeout(refreshAll, 4000);
+  //setTimeout(refreshAll, 4000);
 }
 function chfToRsd() {
     var chfRsd = document.getElementById("swissFranc").value * 102.9;
