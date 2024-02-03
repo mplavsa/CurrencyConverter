@@ -1,64 +1,60 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currency converter</title>
-    <link rel="stylesheet" type="text/css" href="css/converter.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Currency converter</title>
+<link rel="stylesheet" type="text/css" href="css/converter.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
-
 <p id="date"></p>
-
 <h1>Currency &nbsp converter</h1>
-
 <div id="mainCurDisplay">
-        <div class="currencyInput">
-            <div class="imgFlag">
-                <img src="img/srb.png" alt="RSD">
-            </div>
-            <div class="exCur">
-                <input onkeyup="rsdToAll()" ondblclick="refreshAll()" id="rsd" placeholder="RSD">
-            </div>
+    <div class="currencyInput">
+        <div class="imgFlag">
+            <img src="img/srb.png" alt="RSD">
         </div>
-<br>
-        <div class="currencyInput">
-            <div class="imgFlag">
-                <img src="img/eu.png" alt="euro">
-            </div>
-            <div class="exCur">
-                <input onkeyup="eurToAll()" ondblclick="refreshAll()" id="euro" placeholder="EUR">
-            </div>
-        </div>
-<br>
-        <div class="currencyInput">
-            <div class="imgFlag">
-                <img src="img/us.png" alt="USA">
-            </div>
         <div class="exCur">
-                <input onkeyup="usdToAll()" ondblclick="refreshAll()" id="usDolar" placeholder="USD">
-            </div>
+            <input onkeyup="rsdToAll()" ondblclick="refreshAll()" id="rsd" placeholder="RSD">
         </div>
+    </div>
 <br>
-        <div class="currencyInput">
-            <div class="imgFlag">
-                <img src="img/sws.png" alt="SWISS">
-            </div>
+    <div class="currencyInput">
+        <div class="imgFlag">
+            <img src="img/eu.png" alt="euro">
+        </div>
         <div class="exCur">
-                <input onkeyup="chfToAll()" ondblclick="refreshAll()" id="swissFranc" placeholder="CHF">
-            </div>
+            <input onkeyup="eurToAll()" ondblclick="refreshAll()" id="euro" placeholder="EUR">
         </div>
+    </div>
 <br>
-        <div class="currencyInput">
-            <div class="imgFlag">
-                <img src="img/uk.png" alt="UK">
-            </div>
-            <div class="exCur">
-                <input onkeyup="gbpToAll()" ondblclick="refreshAll()" id="britPound" placeholder="GBP">
-            </div>
+    <div class="currencyInput">
+        <div class="imgFlag">
+            <img src="img/us.png" alt="USA">
         </div>
+    <div class="exCur">
+            <input onkeyup="usdToAll()" ondblclick="refreshAll()" id="usDolar" placeholder="USD">
+        </div>
+    </div>
+<br>
+    <div class="currencyInput">
+        <div class="imgFlag">
+            <img src="img/sws.png" alt="SWISS">
+        </div>
+    <div class="exCur">
+            <input onkeyup="chfToAll()" ondblclick="refreshAll()" id="swissFranc" placeholder="CHF">
+        </div>
+    </div>
+<br>
+    <div class="currencyInput">
+        <div class="imgFlag">
+            <img src="img/uk.png" alt="UK">
+        </div>
+        <div class="exCur">
+            <input onkeyup="gbpToAll()" ondblclick="refreshAll()" id="britPound" placeholder="GBP">
+        </div>
+    </div>
 </div>
 <p id="click">Doubleclick on input field to reset converter</p>
 
@@ -68,30 +64,18 @@
 <script src="js/chf.js"></script>
 <script src="js/gbp.js"></script>
 
-
-
-    <script>
-        
-        function refreshAll() {
-
-            document.getElementById("rsd").value = "";
-            document.getElementById("euro").value = "";
-            document.getElementById("usDolar").value = "";
-            document.getElementById("swissFranc").value = "";
-            document.getElementById("britPound").value = "";
-
-        }
-    </script>
-    
-    
-    <script>
-        
-        var d = new Date("18/07/2018");
-        document.getElementById("date").innerHTML = new Date().toDateString();
-        
-        
-    </script>
-
+<script>  
+function refreshAll() {
+    document.getElementById("rsd").value = "";
+    document.getElementById("euro").value = "";
+    document.getElementById("usDolar").value = "";
+    document.getElementById("swissFranc").value = "";
+    document.getElementById("britPound").value = "";
+    }
+</script>
+<script>
+    var d = new Date("18/07/2018");
+    document.getElementById("date").innerHTML = new Date().toDateString();
+</script>
 </body>
-
 </html>
